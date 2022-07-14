@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: #091924;
+    color: white;
+}
+
+.calculadora{
+    margin: 5% auto;
+    max-width: 400px;
+    background-color: #021a29;    
+}
+#display{
+    background-color: white;
+    color: black;
+    min-height: 60px;
+    width: 100%;
+    padding: 20px;
+    font-size: 20px;
+    text-align: right;
+}
+.displayAuto{
+    background-color: #ff2d2d;
+    min-height: 30px;
+    padding: 10px;
+    width: 100%;
+    font-size: 20px;
+    text-align: right;
+    color: white;
+}
+#grupoBotoes > div{
+    font-size: 20px;
+    padding: 30px;
+}
+
+#grupoBotoes{
+    display: grid;
+    grid-template-columns: repeat(4fr);
+    grid-template-rows: repeat(5fr);
+    text-align: center;
+    cursor: pointer;
+}
+#grupoBotoes > div{
+    border: 1px solid #011f31;
+}
+#grupoBotoes > div:active{
+    background-color: aqua;
+    transition: 0.01s;
+}
+
+#deletarTudo{
+    background-color: rgb(98, 206, 92);
+    grid-column: 1;
+    color: #091924;
+}
+#apagarADireita{
+    grid-column: 2;
+}
+#divisao{
+    grid-column: 3;
+}
+#multiplicacao{
+    grid-column: 4;
+}
+#igual{
+    grid-column: 3/5;
+    background-color: rgb(4,135,196);
+}
